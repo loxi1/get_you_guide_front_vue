@@ -1,0 +1,721 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap');
+/* CSS Document */
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+    background-color: #252430;
+    overflow-x: hidden;
+}
+.animation {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+.txt_align {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.align {
+    display: table-cell;
+    vertical-align: middle;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,.25);
+    margin: 25px 0 25px 0;
+}
+.login {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color:#F43719 ;
+    text-align: center;
+}
+.login .box {
+    width: 15%;
+    margin: auto;
+    text-align: left;
+}
+.login .wrapper, .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.main {
+    width: 100vw;
+}
+.header {
+    height: 6vh;
+    background-color: #000;
+    position: relative;
+    text-align: right;
+    padding: 2.5% 12.5% 2.5% 12.5%;
+}
+#header-orange {
+    background-color: #F43719;
+}
+.step {
+    width: 20%;
+    text-align: center;
+    float: left;
+    opacity: .5;
+}
+.step:hover {
+    opacity: 1;
+}
+.step .circle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    background-color: #FFF;
+    color: #F43719;
+    margin: auto;
+    display: table;
+}
+
+.content {
+    padding: 1% 12.5% 5% 12.5%;
+}
+.item {
+    width: calc(90% - 4px);
+    border: solid 2px #FFF;
+    padding: 2.5% 5% 2.5% 5%;
+    margin-bottom: 2.5%;
+    color: #FFF;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+.item:hover {
+    color: #000;
+    background-color: #FFF;
+}
+
+
+
+.thumb {
+    width: 30%;
+    margin-right: 5%;
+    background-color: rgba(255,255,255,.1);
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+}
+.thumb_box {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    background-color: rgba(37,36,48, .75);
+}
+.thumb:hover .thumb_box {
+    background-color: rgba(37,36,48, 0);
+}
+.thumb:hover .wrapper {
+    display: none;
+}
+.thumb_box_selected {
+    background-color: #F43719 !important;
+}
+.thumb_box_gal {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+.circle_box {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.item_circle {
+    width: 20%;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+.wrapper_circle {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    border: solid 1px #F43719;
+    position: relative;
+}
+.circle_txt {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+}
+.circle_arrow {
+    position: absolute;
+    z-index: 10;
+    right: -40px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+
+
+
+.redes_wrapper {
+    position: fixed;
+    z-index: 3;
+    right: 25px;
+    top: 40px;
+}
+
+.icon_redes, .icon_whatsapp {
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.icon_whatsapp {
+    background-image: url(../images/icon_whatsapp_white.png);
+    margin-right: 20px;
+}
+
+.icon_whatsapp:hover {
+    background-image: url(../images/icon_whatsapp_color.png);
+    transform: scale(1.25);
+}
+
+.icon_redes:hover {
+    transform: scale(1.25);
+}
+
+.icon_fb {
+    background-image: url(../images/icon_fb.png);
+}
+
+.icon_fb:hover {
+    background-image: url(../images/icon_fb_color.png);
+}
+
+.icon_in {
+    background-image: url(../images/icon_in.png);
+}
+
+.icon_in:hover {
+    background-image: url(../images/icon_in_color.png);
+}
+
+.icon_ld {
+    background-image: url(../images/icon_ld.png);
+}
+
+.icon_ld:hover {
+    background-image: url(../images/icon_ld_color.png);
+}
+
+.icon_yt {
+    background-image: url(../images/icon_yt.png);
+}
+
+.icon_yt:hover {
+    background-image: url(../images/icon_yt_color.png);
+}
+
+
+/* Fonts */
+
+
+.t1, .t2, .t3, .t4, .t5, .t6, .t7, .t8 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.t1 {
+    font-size: 2rem;
+}
+
+.t2 {
+    font-size: 1.6rem !important;
+}
+.t2 a {
+    color: #FFF;
+}
+.t3 {
+    font-size: 1.2rem;
+}
+.t4 {
+    font-size: 4.6rem;
+}
+.t5 {
+    font-size: 15rem;
+    font-weight: 900;
+}
+.t6 {
+    font-size: 2rem;
+}
+.t7 {
+    font-size: 3rem;
+}
+.t8 {
+    font-size: 1.5rem;
+}
+
+
+@font-face {
+    font-family: 'trutru_stencil';
+    src: url('fonts/trustencil-webfont.woff2') format('woff2'),
+    url('fonts/trustencil-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.black {
+    color: #252430;
+}
+
+.white {
+    color: #FFF;
+}
+
+.orange {
+    color: #F43719;
+}
+
+.plomo {
+    color: #63687a;
+}
+
+.bt_black, .bt_orange, .bt_white, .bt_white_outline {
+    display: inline-block;
+    padding: 15px 0 0 0;
+    width: 15%;
+    height: 40px;
+    border: none;
+    background-color: #252430;
+    color: #FFF;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.bt_black:hover {
+    background-color: #FFF;
+    color: #252430;
+}
+.bt_white {
+    background-color: #FFF;
+    color: #000;
+}
+.bt_orange {
+    color: #FFF;
+    background-color: #F43719;
+}
+.bt_orange:hover {
+    background-color: #FFF;
+    color: #252430;
+}
+.item .bt_orange:hover {
+    color: #FFF;
+    background-color: #F43719;
+}
+.bt_white_outline {
+    width: 40%;
+    border: solid 1px #FFF;
+    background-color: transparent;
+}
+
+.bt_link {
+    display: inline-block;
+    color: #FFF;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Forms */
+.box_first, .box_second, .box_third, .box_four, .box_five, .box_six, .box_seven, .box_eight, .box_nine, .box_ten, .box_eleven {
+    float: left;
+    border-top: 1px solid #F43719;
+    text-align: left;
+}
+.box_first {
+    width: calc(35% - 1px - 2rem);
+    border-right: 1px solid #F43719;
+    padding: 2rem 2rem 2rem 0;
+}
+.box_second {
+    width: calc(20% - 1px - 4rem);
+    border-right: 1px solid #F43719;
+    padding: 2rem;
+}
+.box_third {
+    width: calc(45% - 2rem);
+    padding: 2rem 0 2rem 2rem;
+}
+.box_third .field {
+    width: calc(50% - 37px);
+    display: inline-block;
+}
+.box_four {
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+}
+.box_four .field_left {
+    width: calc(20% - 37px);
+    display: inline-block;
+    margin-right: 30px;
+}
+.box_four .field_right {
+    width: calc(80% - 37px);
+    display: inline-block;
+}
+.box_five {
+    width: calc(25% - 1px - 2rem);
+    padding: 2rem 2rem 2rem 0;
+}
+.box_six {
+    width: calc(75% - 2rem);
+    padding: 2rem 0 2rem 2rem;
+    border-left: 1px solid #F43719;
+}
+.box_six .field  {
+    width: calc(100% - 222px);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+.box_seven {
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+}
+.box_seven .field  {
+    width: calc(100% - 222px);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+.box_eight {
+    width: calc(65% - 1px - 2rem);
+    border-right: 1px solid #F43719;
+    padding: 2rem 2rem 2rem 0;
+}
+.box_nine {
+    width: calc(35% - 2rem);
+    padding: 2rem 0 2rem 2rem;
+}
+.box_ten {
+    width: calc(50% - 1px - 2rem);
+    border-bottom: 1px solid #F43719;
+    border-right: 1px solid #F43719;
+    padding: 2rem 2rem 2rem 0;
+}
+.box_eleven {
+    width: calc(50% - 2rem);
+    border-bottom: 1px solid #F43719;
+    padding: 2rem 0 2rem 2rem;
+}
+
+
+.box_space, .box_space_empty {
+    width: 25%;
+    float: left;
+    background-color: #F43719;
+    margin-right: 5%;
+    padding: 2.5%;
+}
+.box_space .box, .box_space_empty .box {
+    width: 100%;
+    padding-top: 90%;
+    position: relative;
+}
+
+.box_space .field {
+    width: calc(40% - 20px);
+    margin: auto;
+    text-align: center;
+}
+.box_space_empty {
+    background-color: transparent;
+    margin-right: 0;
+    border: solid 1px #FFf;
+    width: calc(25% - 2px);
+}
+
+
+
+
+.field, .area, .area_space, .send {
+    color: #252430;
+    width: calc(100% - 22px);
+    padding: 0 10px 0 10px;
+    height: 40px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    outline: none !important;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #FFF;
+    margin: 10px 0 10px 0;
+    resize: none;
+    display: block;
+}
+.field_fix {
+    color: #252430;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.area {
+    border: none;
+    height: 60px;
+    padding: 10px;
+}
+.area_space {
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px #fff;
+    height: 150px;
+    padding: 10px;
+    color: #FFF;
+}
+
+
+.login .send {
+    width: 60%;
+    margin-left: 20%;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 50px;
+    font-weight: 700;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.login .send:hover {
+    color: #F43719;
+}
+
+::placeholder {
+    color: #F43719;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.area_space::placeholder {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.field_fix::placeholder {
+    color: #252430;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.drop {
+    color: #FFF;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    border: solid 1px #FFF;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-image: url(../images/icon_downarrow_white.png);
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    outline: none !important;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+    display: block;
+}
+
+
+.radio_item {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    appearance: none;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+
+
+
+/* The container BOX */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: solid 1px #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: rgba(255,255,255,.25);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #F43719;
+    border: solid 1px #F43719;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+@media screen and (max-width:700px) {
+    .box_first, .box_second, .box_third, .box_four, .box_five, .box_six, .box_seven, .box_eight, .box_nine, .box_ten, .box_eleven {
+        float: none;
+        width: 100% !important;
+        border-right: none !important;
+        border-left: none !important;
+        padding: 2rem 0 2rem 0 !important;
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) {
+    html, body {
+        font-size: 10px;
+    }
+
+}
+
+
+@media (min-width: 1600px) {
+    html, body {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 1800px) {
+    html, body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 2100px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right;
+}
+
+.bg_black {
+    background-color: #252430;
+}
+.border_5p {
+    border-radius: 10px;
+}

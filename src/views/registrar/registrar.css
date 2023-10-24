@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap');
+
+div.error { display: none; }
+input {	border:none; }
+input.checkbox { border: none }
+input:focus { border: none; }
+input.error { background-color: rgba(0,0,0,.5); }
+/*.error {*/
+/*    color: #F43719;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*}*/
+
+form label.error {
+    color: red;
+    font-style: italic;
+    display: none !important;
+}
+
+form input.error,
+form textarea.error,
+form select.error {
+    border: none;
+}
+.alinear {
+    margin-top: 3%;
+}
+.form-group--error input, .form-group--error textarea, .form-group--error input:focus, .form-group--error input:hover {
+    border-color: #f79483;
+}
+.form-group--alert, .form-group--error {
+    animation-name: shakeError;
+    animation-fill-mode: forwards;
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+}
+.brief div.error {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
